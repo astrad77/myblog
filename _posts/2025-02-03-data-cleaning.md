@@ -11,7 +11,7 @@ So, you've got your hands on a data set. But how do you start using it in Python
 ## Pandas
 In this tutorial, I will be using a well-known library in Python called pandas. Pandas provides the tools that we need to import, manipulate, and clean data. To use Pandas, we will import it by running this line of code: 
 
-```import pandas as pd```
+`import pandas as pd`
 
 By specifying that we are importing the pandas library as the nickname "pd", we reduce the amount of typing we will have to do later. 
 
@@ -28,7 +28,7 @@ To read this data in, I will use the `pd.read_csv` function (pd is the nickname 
 I also named the data set `data` in Python for easier use. 
 
 ## Preview the Data
-With your data now imported, lets get a preview of our data. To get a snapshot of our data, we can use the `head` function:
+With your data now imported, lets get a preview of our data. To get a snapshot of our data, we can use the `.head` function:
 `data.head()`
 If you're using the same data set as I am, the result should look something like this: 
 ![Figure]({{site.url}}/{{site.baseurl}}/assets/images/data_head.png)
@@ -46,14 +46,14 @@ The next step is to find and deal with any missing values in our data set. To ch
 ![Figure]({{site.url}}/{{site.baseurl}}/assets/images/isnull.png)
 We see that we have 1 missing value in the Date column and 2 missing values in the Calories column. 
 
-There are many methods to deal with these missing values. A few include `.dropna` (removes rows with missing values), `.fillna` (fills missing values with a specified rule), `ffill` (fills missing values with the previous non-missing value), and `bfill` (fills missing values with the next non-missing value). For this tutorial, I will use `.dropna` since there are only a few rows with missing values. The code for my example will look like this: `data.dropna(inplace = True)`. Note that the `inplace = True` argument just makes it so that we are modifying the original data rather than making a copy. 
+There are many methods to deal with these missing values. A few include `.dropna` (removes rows with missing values), `.fillna` (fills missing values with a specified rule), `.ffill` (fills missing values with the previous non-missing value), and `.bfill` (fills missing values with the next non-missing value). For this tutorial, I will use `.dropna` since there are only a few rows with missing values. The code for my example will look like this: `data.dropna(inplace = True)`. Note that the `inplace = True` argument just makes it so that we are modifying the original data rather than making a copy. 
 
 ## Change Column Data Types
 Perfect! Now that we've dealt with those pesky missing values, we can fix our Date column. We will use a function in pandas called `pd.to_datetime`. The line of code will look like this: 
 `data["Date"] = pd.to_datetime(data["Date])`
 When we run this code, we get a scary error message!
 ![Figure]({{site.url}}/{{site.baseurl}}/assets/images/error.png)
-It isn't as scary as it looks. Python just wants each entry in the Date column to be in a specific format and for all of the entries to have the same format. It looks like the entries have a couple of different formats, so let's use the suggestion Python provides. Here is the updated code which should fix the issue: `data["Date"] = pd.to_datetime(data["Date], format = 'mixed')`. 
+It isn't as scary as it looks. Python just wants each entry in the Date column to be in a specific format and for all of the entries to have the same format. It looks like the entries have a couple of different formats, so let's use the suggestion Python provides. Here is the updated code which should fix the issue: `data["Date"] = pd.to_datetime(data["Date"], format = 'mixed')`. 
 
 Now, running `data.info()` again, we see that the Date column is now listed as a datetime data type!
 There are also pandas functions such as `pd.to_numeric` that can change columns to other data types. 
