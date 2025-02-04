@@ -20,7 +20,7 @@
 
 title: Data Science for Beginners  
 email: astrad77@gmail.com
-description: "A blog for anyone wanting to start or progress their data science journey!" 
+description: "A blog for anyone wanting to start or progress on their data science journey!" 
 baseurl: "/myblog" # the name of the repository 
 url: "https://astrad77.github.io" #  change this to "https://<your-github-username>.github.io"
 image: /assets/images/headerimg.jpg
