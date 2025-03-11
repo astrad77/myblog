@@ -3,7 +3,7 @@ layout: post
 title:  "Data Curation in Action: Tracking Renewable Energy’s Impact on Electricity Costs"
 author: Andrew Stradling
 description: This post gives a quick rundown of some data curation techniques. I use data on renewable energy and electricity prices as an example. 
-image: /assets/images/lightbulb.jpg
+image: /assets/images/lightbulb.png
 --- 
 
 Renewable energy has been a hot topic in recent decades because of things like climate change, air quality, and energy spending. However, I wanted to answer a different question: how does renewable energy affect electricity costs? In order to answer this question, we need some data. This post will explore some techniques of obtaining data that isn't readily available. 
