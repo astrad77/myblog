@@ -27,14 +27,25 @@ The data set contains the following columns: `Month`, `Year`, `price_all`,  `pri
 
 Now that we have the data we want, let's take a look at it! 
 
-(input plots here)
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/histogram.png)
 
+This histogram gives us the distribution of overall average price, which seems to be roughly centered at 10 cents per kilowatt hour and averages as low as 7 cents and as high as 13 cents. Now, lets take a look at how average prices have changed over time. 
+
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/price_vs_date.png)
+
+Not surprisingly, we see that average electricity prices have increased over the past couple decades. Some of this is probably due to inflation, but some of this increase is also probably due to depleted natural resources. Either way, average prices have been on the rise. According to the plot, prices have seen a sharp increase over the past couple of years. Time will tell if this trend continues. 
+
+Let's make a plot that investigates the relationship between renewable energy production and average price. 
+
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/production_vs_price.png)
+
+Well, shoot. If we take this graph at face value, the data says that as more renewable energy is produced, average energy prices go up (at least for residential areas). Should we stop with renewable energy then? Not necessarily. Remember that correlation does not mean causation: increasing renewable energy production does not necessarily **cause** average prices to go up. In order to discover the true relationship, we will have to do more in-depth analysis. We may even need more data than we currently have available to us. I will do some of this analysis in an upcoming post. 
 
 
 ## Conclusion
 
-Phew. Let's review what we've gone over today. First, we asked an important question: how does the growth of renewable energy affect electricity costs? To answer this question, we downloaded two separate data sets from the <a href="https://www.eia.gov/electricity/data.php" target="_blank">US Energy Information Association</a>. One of these data sets detailed energy production while the other gave information about electricity prices. We manipulated these data sets to get the information we wanted from each one, and then we combined them into one data set. To finish, we took a look at the data set that we just created. **describe what plots maybe, once you put those in**. In my next post, I'll continue with this question and attempt to answer it using the data we have gathered here. 
+Phew. Let's review what we've gone over today. First, we asked an important question: how does the growth of renewable energy affect electricity costs? To answer this question, we downloaded two separate data sets from the <a href="https://www.eia.gov/electricity/data.php" target="_blank">US Energy Information Association</a>. One of these data sets detailed energy production while the other gave information about electricity prices. We manipulated these data sets to get the information we wanted from each one, and then we combined them into one data set. To finish, we took a look at the data set that we just created. We discovered that average prices have been rising over recent years. This led to the realization that higher production of renewable energy is correlated with higher average electricity prices. In my next post, I'll continue with this question and attempt to answer it using the data we have gathered here. 
 
 If you'd like to practice, try creating the data set that I made! If you need hints or help, the code I used can be found in <a href="https://github.com/astrad77/Data-Curation?tab=readme-ov-file" target="_blank">this GitHub repository</a>. Once you've tried that, ask your own data science question and find the data to answer it! 
 
-Thanks for reading!s
+Thanks for reading!
