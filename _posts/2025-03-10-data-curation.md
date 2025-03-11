@@ -23,7 +23,7 @@ Because we are interested in how the growth of **renewable** energy affects pric
 
 ## Exploring the Data
 
-The data set contains the following columns: `Month`, `Year`, `price_all`,  `price_residential`, `price_industrial`, `price_commercial`, and `Total_Renewable_Generation_MWh`. It contains data for every month from 2001 through 2023 and contains 276 rows. 
+The data set contains the following columns: `date`, `price_all`,  `price_residential`, `price_industrial`, `price_commercial`, and `Total_Renewable_Generation_MWh`. It contains data for every month from 2001 through 2023 and contains 276 rows. 
 
 Now that we have the data we want, let's take a look at it! 
 
