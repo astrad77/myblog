@@ -21,6 +21,8 @@ To save time, I won't go into every detail of how I cleaned and merged these dat
 
 Because we are interested in how the growth of **renewable** energy affects prices, I filtered the energy production data to only include renewable sources. Then I added up all renewable energy production (in megawatt hours) for each month. Within the electricity prices data set, I averaged the prices for each month and for each sector (residential, industrial, commercial, and all). Once all of this was done, I cleaned the data to make sure column names matched and that the lengths of each data set was the same. Then I merged the two data sets into one final data set that we can use to answer our question. 
 
+An additional note about gathering and combining data: your data sets must have at least one column in common. That common column is sometimes called a key; it is the link between the two data sets. Without a common column, the data sets cannot be merged. The column names don't necessarily have to match perfectly, but they should be measuring the same thing. In my example, the key between the two data sets was the year and month. 
+
 ## Exploring the Data
 
 The data set contains the following columns: `date`, `price_all`,  `price_residential`, `price_industrial`, `price_commercial`, and `Total_Renewable_Generation_MWh`. It contains data for every month from 2001 through 2023 and contains 276 rows. 
