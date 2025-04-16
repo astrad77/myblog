@@ -3,7 +3,7 @@ layout: post
 title:  "Exploring Renewable Energy and Electricity Prices with Streamlit"
 author: Andrew Stradling
 description: In this post, I will expand on my previous post's insights. I give some EDA on the electricity prices and renewable energy first, as well as introducing an app I built in Streamlit to explore the data. 
-image: /assets/images/lightbulb.png
+image: /assets/images/leaf.png
 --- 
 
 I promised you all that I would talk more about the electricity data, so here we are! I'll give a quick refresher so you don't have to go back. We're trying to see whether the production of renewable energy has any impact on electricity prices in the United States. We have a data set containing average electricity prices for different sectors (residential, industrial, etc.) and total renewable energy produced for each month since 2000. 
